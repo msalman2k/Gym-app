@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shredded_athome">
+
+
+    <TextView
+        android:id="@+id/athome_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At Home"
+        android:textSize="100dp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"/>
+
+    <RelativeLayout
+        android:id="@+id/RL_1"
+        android:layout_below="@+id/athome_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/athome_t1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:text="header"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RL_2"
+        android:layout_below="@+id/RL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/athome_t2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:text="header"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL_3"
+        android:layout_below="@+id/RL_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true" />
+
+
+        <TextView
+            android:id="@+id/athome_t3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:text="header"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

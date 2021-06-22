@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/maincontainer"
+    tools:context=".shredded"
+    tools:ignore="DuplicateIds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+       <Button
+           android:id="@+id/btn_exercise"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="15dp"
+           android:text="Exercise"
+           android:backgroundTint="#FD4545"/>
+
+        <Button
+            android:id="@+id/btn_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="Diet"
+            android:backgroundTint="#FD4545"/>
+
+        <Button
+            android:id="@+id/btn_athome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="Routine"
+            android:backgroundTint="#FD4545"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <fragment
+            android:id="@+id/frg_1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.mcproject.Shredded_exercise"/>
+        <fragment
+            android:id="@+id/frg_2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.mcproject.Shredded_diet"/>
+        <fragment
+            android:id="@+id/frg_3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.mcproject.Shredded_athome"/>
+    </LinearLayout>
+
+</LinearLayout>
