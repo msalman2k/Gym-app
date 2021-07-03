@@ -38,21 +38,16 @@ public class Bulk_exercise extends Fragment {
         recyclerView = view.findViewById(R.id.bulk_exercise_recycler);
 
 
+        bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_chest,"CHEST"));
         bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_biceps,"BICEPS"));
         bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_tricep,"TRICEPS"));
         bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_wing,"WINGS"));
-        bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_biceps,"BICEPS"));
-        bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_biceps,"BICEPS"));
+        bulk_exercise_dataList.add(new bulk_exercise_data(R.drawable.exercise_thigh,"THIGHS"));
 
-
-        BulkExerciseAdapter = new BulkExerciseAdapter(bulk_exercise_dataList,Bulk_exercise.this);
+        BulkExerciseAdapter = new BulkExerciseAdapter(bulk_exercise_dataList,getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter((RecyclerView.Adapter) BulkExerciseAdapter);
-
-
-
-
 
         return view;
     }

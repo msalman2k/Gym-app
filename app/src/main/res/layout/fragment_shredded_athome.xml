@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gym"
     tools:context=".Shredded_athome">
 
 
@@ -15,22 +17,28 @@
         android:textColor="@color/black"
         android:fontFamily="casual"/>
 
-    <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
         android:id="@+id/RL_1"
         android:layout_below="@+id/athome_tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="16dp"
         >
 
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:id="@+id/img1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="8dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/athome1"
             android:layout_alignParentLeft="true" />
 
 
@@ -39,32 +47,25 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="120dp"
-            android:text="header"
+            android:layout_marginLeft="150dp"
+            android:text="Squat Kick"
             android:textColor="#000"
             android:textSize="20dp"
             android:textStyle="bold"
             android:gravity="center_vertical"
+            android:layout_below="@id/img1"
             />
-    </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/RL_2"
-        android:layout_below="@+id/RL_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        >
-
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:id="@+id/img2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="8dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/athome2"
             android:layout_alignParentLeft="true" />
 
 
@@ -73,31 +74,24 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="120dp"
-            android:text="header"
+            android:layout_marginLeft="150dp"
+            android:text="Inch Worm"
             android:textColor="#000"
             android:textSize="20dp"
             android:textStyle="bold"
             android:gravity="center_vertical"
+            android:layout_below="@id/img2"
             />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/RL_3"
-        android:layout_below="@+id/RL_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        >
-
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:id="@+id/img3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="8dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/athome3"
             android:layout_alignParentLeft="true" />
 
 
@@ -106,15 +100,41 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="120dp"
-            android:text="header"
+            android:layout_marginLeft="150dp"
+            android:text="Jumping Jack"
             android:textColor="#000"
             android:textSize="20dp"
             android:textStyle="bold"
             android:gravity="center_vertical"
+            android:layout_below="@id/img3"
             />
-    </RelativeLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img4"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/athome4"
+            android:layout_alignParentLeft="true" />
 
 
+        <TextView
+            android:id="@+id/athome_t4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:text="Reverse Crunches"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_below="@id/img4"
+            />
+    </LinearLayout>
+    </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

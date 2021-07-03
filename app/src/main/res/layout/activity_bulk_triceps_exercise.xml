@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/layoutbackground"
+            android:orientation="vertical">
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/triceps_ex1"
+                />
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close-Grip Bench Press"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img1"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+
+
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/triceps_ex2"
+                />
+
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cable Overhead Tricep Extension"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img2"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/triceps_ex3"
+                />
+
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Decline Triceps Extension"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img3"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/triceps_ex4"
+                />
+
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cable Pushdown"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/img4"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

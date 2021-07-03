@@ -1,14 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Bulk_athome">
+    android:orientation="vertical"
+    android:background="@color/gym"
+    tools:context=".Shredded_athome">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/athome_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="At Home"
+        android:textSize="100dp"
+        android:textColor="@color/black"
+        android:fontFamily="casual"/>
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/RL_1"
+            android:layout_below="@+id/athome_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/athome1"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/athome_t1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Squat Kick"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_below="@id/img1"
+                />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/athome2"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/athome_t2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Inch Worm"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_below="@id/img2"
+                />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/athome3"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/athome_t3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Jumping Jack"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_below="@id/img3"
+                />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img4"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/athome4"
+                android:layout_alignParentLeft="true" />
+
+
+            <TextView
+                android:id="@+id/athome_t4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Reverse Crunches"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_below="@id/img4"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

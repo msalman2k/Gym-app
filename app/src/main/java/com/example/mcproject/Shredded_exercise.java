@@ -1,5 +1,6 @@
 package com.example.mcproject;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -41,14 +42,14 @@ public class Shredded_exercise extends Fragment {
         recyclerView = view.findViewById(R.id.exercise_recyclerview);
 
 
+        exercise_list.add(new exercise_data(R.drawable.exercise_chest,"CHEST"));
         exercise_list.add(new exercise_data(R.drawable.exercise_biceps,"BICEPS"));
         exercise_list.add(new exercise_data(R.drawable.exercise_tricep,"TRICEPS"));
         exercise_list.add(new exercise_data(R.drawable.exercise_wing,"WINGS"));
-        exercise_list.add(new exercise_data(R.drawable.exercise_biceps,"BICEPS"));
-        exercise_list.add(new exercise_data(R.drawable.exercise_biceps,"BICEPS"));
-        exercise_list.add(new exercise_data(R.drawable.exercise_biceps,"BICEPS"));
+        exercise_list.add(new exercise_data(R.drawable.exercise_thigh,"THIGHS"));
 
-        ExerciseAdapter = new ExerciseAdapter(exercise_list,Shredded_exercise.this);
+
+        ExerciseAdapter = new ExerciseAdapter(exercise_list, getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter((RecyclerView.Adapter) ExerciseAdapter);

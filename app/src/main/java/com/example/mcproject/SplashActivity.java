@@ -4,13 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class SplashActivity extends AppCompatActivity {
 
-    ImageView titlelogo,iv_1,iv_2;
+    Handler handler;
+    GifImageView titlelogo;
+    ImageView iv_1,iv_2;
     Animation animation_logo,animation_upper,animation_lower;
 
     @Override
@@ -26,9 +31,19 @@ public class SplashActivity extends AppCompatActivity {
         titlelogo.setAnimation(animation_logo);
         iv_1.setAnimation(animation_upper);
         iv_2.setAnimation(animation_lower);
-
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent=new Intent(SplashActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
+
+//        handler=new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        },3000);
+
     }
 }

@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".SplashActivity">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/logo_gif"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/doge">
+        android:layout_height="500dp"
+        android:src="@drawable/logo">
 
-    </ImageView>
+    </pl.droidsonroids.gif.GifImageView>
 
     <TextView
         android:id="@+id/splashlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mr.Beast"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40dp"
         android:layout_below="@id/logo_gif"
         android:layout_centerHorizontal="true"

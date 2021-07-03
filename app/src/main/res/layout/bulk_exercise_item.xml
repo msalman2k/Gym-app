@@ -9,23 +9,24 @@
     app:cardUseCompatPadding="true">
 
 
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="280dp"
         android:padding="16dp"
+        android:background="@drawable/layoutbackground"
         >
 
         <ImageView
             android:id="@+id/bulk_exercise_img1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="23dp"
             android:layout_marginTop="8dp"
-            android:src="@mipmap/ic_launcher"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="23dp" />
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/exercise_biceps"
+            />
 
 
         <TextView
@@ -33,15 +34,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="header"
-            android:layout_marginLeft="35dp"
             android:textColor="#000"
-            android:textSize="25dp"
+            android:textSize="40dp"
             android:textStyle="bold"
             android:layout_below="@+id/bulk_exercise_img1"
-            android:gravity="center_vertical"
-            />
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
 
     </RelativeLayout>
+
+
 
 
 </androidx.cardview.widget.CardView>

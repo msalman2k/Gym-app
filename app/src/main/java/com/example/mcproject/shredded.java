@@ -14,18 +14,19 @@ public class shredded extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shredded);
+        getSupportActionBar().hide();
 
         btn_exercise   = findViewById(R.id.btn_exercise);
         btn_diet = findViewById(R.id.btn_diet);
         btn_athome = findViewById(R.id.btn_athome);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new Shredded_exercise()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.maincontainer, new Shredded_exercise()).commit();
 
 
         btn_exercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().add(R.id.maincontainer, new Shredded_exercise()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new Shredded_exercise()).commit();
             }
         });
         btn_diet.setOnClickListener(new View.OnClickListener() {

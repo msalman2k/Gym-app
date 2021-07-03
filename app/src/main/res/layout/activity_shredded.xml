@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
-    android:id="@+id/maincontainer"
-    tools:context=".shredded"
-    tools:ignore="DuplicateIds">
+    android:background="@color/white">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="3">
@@ -21,7 +19,7 @@
            android:layout_weight="1"
            android:textSize="15dp"
            android:text="Exercise"
-           android:backgroundTint="#FD4545"/>
+           android:backgroundTint="@color/gym"/>
 
         <Button
             android:id="@+id/btn_diet"
@@ -30,7 +28,7 @@
             android:layout_weight="1"
             android:textSize="15dp"
             android:text="Diet"
-            android:backgroundTint="#FD4545"/>
+            android:backgroundTint="@color/gym"/>
 
         <Button
             android:id="@+id/btn_athome"
@@ -38,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="15dp"
-            android:text="Routine"
-            android:backgroundTint="#FD4545"/>
+            android:text="At Home"
+            android:backgroundTint="@color/gym"/>
 
     </LinearLayout>
 

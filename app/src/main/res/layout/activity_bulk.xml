@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bulk"
     android:orientation="vertical"
-    android:id="@+id/maincontainer"
-    tools:ignore="DuplicateIds">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="3">
+
         <Button
             android:id="@+id/btn_exercise_bulk"
             android:layout_width="wrap_content"
@@ -20,7 +19,7 @@
             android:layout_weight="1"
             android:textSize="15dp"
             android:text="Exercise"
-            android:backgroundTint="#FD4545"/>
+            android:backgroundTint="@color/gym"/>
 
         <Button
             android:id="@+id/btn_diet_bulk"
@@ -29,7 +28,7 @@
             android:layout_weight="1"
             android:textSize="15dp"
             android:text="Diet"
-            android:backgroundTint="#FD4545"/>
+            android:backgroundTint="@color/gym"/>
 
         <Button
             android:id="@+id/btn_athome_bulk"
@@ -37,23 +36,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="15dp"
-            android:text="Routine"
-            android:backgroundTint="#FD4545"/>
+            android:text="At Home"
+            android:backgroundTint="@color/gym"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/maincontainer"
+        android:id="@+id/maincontainer1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="3">
 
         <fragment
             android:id="@+id/frg_1"
-            android:layout_weight="1"
+            android:name="com.example.mcproject.Bulk_exercise"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.example.mcproject.Bulk_exercise"/>
+            android:layout_weight="1" />
+
         <fragment
             android:id="@+id/frg_2"
             android:layout_weight="1"

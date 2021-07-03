@@ -1,5 +1,6 @@
 package com.example.mcproject;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -16,11 +17,16 @@ public class BulkDietAdapter extends RecyclerView.Adapter<BulkDietAdapter.ViewHo
     List<bulk_diet_data> bulk_diet_dataList = new ArrayList<>();
     Bulk_diet Context;
 
+    public BulkDietAdapter(List<bulk_diet_data> bulk_diet_dataList, Bulk_diet context) {
+        this.bulk_diet_dataList = bulk_diet_dataList;
+        Context = context;
+    }
+
     @NonNull
     @Override
     public BulkDietAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bulk_diet_item,parent,false);
+        return new ViewHolder(view);
     }
 
     @Override

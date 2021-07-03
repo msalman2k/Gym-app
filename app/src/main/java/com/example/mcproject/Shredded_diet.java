@@ -40,11 +40,46 @@ public class Shredded_diet extends Fragment {
         recyclerView = view.findViewById(R.id.diet_recycler);
 
 
-        diet_list.add(new diet_data(R.drawable.diet1," one 3-week study, \n14 healthy adults following a paleo diet lost an average of 5.1 pounds (2.3 kg) and reduced their waist circumference \n— a marker for belly fat — by an average of 0.6 inches (1.5 cm)\n"));
-        diet_list.add(new diet_data(R.drawable.diet6,"Fuck two ibrars dirty nasty ass"));
-        diet_list.add(new diet_data(R.drawable.diet2,"5 times do deepthroat to ibrar fucking sloppy mouth's"));
-        diet_list.add(new diet_data(R.drawable.diet3,""));
-        diet_list.add(new diet_data(R.drawable.diet5,""));
+        diet_list.add(new diet_data(R.drawable.diet1,"Breakfast: scrambled eggs, stir-fried veggies, and oatmeal\n" +
+                "Snack: whey protein shake\n" +
+                "Lunch: grilled chicken breast, mixed greens, and baked sweet potato\n" +
+                "Snack: hard-boiled egg(s) and carrot sticks\n" +
+                "Dinner: broiled fish, green beans with brown rice"));
+        diet_list.add(new diet_data(R.drawable.diet6,"Breakfast: protein pancakes with fresh berries\n" +
+                "Snack: apple slices and almonds\n" +
+                "Lunch: lean ground beef burger on lettuce with tomato, onion, and green beans\n" +
+                "Snack: protein shake\n" +
+                "Dinner: shrimp stir-fried with bell pepper and brown rice over spinach"));
+        diet_list.add(new diet_data(R.drawable.diet2,"Breakfast: Greek yogurt, almonds or walnuts, whole grain granola, and fresh berries\n" +
+                "Snack: protein shake\n" +
+                "Lunch: grilled fish with a spinach salad and broccoli\n" +
+                "Snack: egg white omelet with bell peppers and mushrooms\n" +
+                "Dinner: chicken breast topped with fresh salsa with a sweet potato and a side salad"));
+        diet_list.add(new diet_data(R.drawable.diet3,"Breakfast: oatmeal with berries and scrambled egg whites\n" +
+                "Snack: turkey breast with carrots and celery\n" +
+                "Lunch: sirloin steak with broccoli and mushrooms\n" +
+                "Snack: apples with natural nut butter\n" +
+                "Dinner: broiled fish, brown rice, and a mixed green salad"));
+        diet_list.add(new diet_data(R.drawable.diet5,"Breakfast: oatmeal with berries and scrambled egg whites\n" +
+                "Snack: turkey breast with carrots and celery\n" +
+                "Lunch: sirloin steak with broccoli and mushrooms\n" +
+                "Snack: apples with natural nut butter\n" +
+                "Dinner: broiled fish, brown rice, and a mixed green salad"));
+        diet_list.add(new diet_data(R.drawable.diet6,"Breakfast: protein shake with oatmeal\n" +
+                "Snack: hard-boiled egg whites with sliced peppers and cucumbers\n" +
+                "Lunch: grilled chicken with white bean and tomato salad\n" +
+                "Snack: Greek yogurt with berries and nuts\n" +
+                "Dinner: grilled fish with quinoa and green beans"));
+        diet_list.add(new diet_data(R.drawable.diet3,"Breakfast: scrambled egg whites with cheese, peppers, herbs, and Ezekiel bread\n" +
+                "Snack: protein shake\n" +
+                "Lunch: grilled chicken breast with bell peppers, black beans, and onions over romaine lettuce\n" +
+                "Snack: apple and almonds\n" +
+                "Dinner: sirloin steak with sweet potato and asparagus"));
+        diet_list.add(new diet_data(R.drawable.diet3,"Breakfast: scrambled egg whites with cheese, peppers, herbs, and Ezekiel bread\n" +
+                "Snack: protein shake\n" +
+                "Lunch: grilled chicken breast with bell peppers, black beans, and onions over romaine lettuce\n" +
+                "Snack: apple and almonds\n" +
+                "Dinner: sirloin steak with sweet potato and asparagus"));
 
         DietAdapter = new DietAdapter(diet_list,Shredded_diet.this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

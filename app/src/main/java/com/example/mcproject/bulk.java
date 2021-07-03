@@ -14,33 +14,34 @@ public class bulk extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shredded);
+        setContentView(R.layout.activity_bulk);
+        getSupportActionBar().hide();
 
         btn_exercise_bulk   = findViewById(R.id.btn_exercise_bulk);
         btn_diet_bulk = findViewById(R.id.btn_diet_bulk);
-        btn_athome_bulk = findViewById(R.id.btn_athome);
-/*
-        getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new Shredded_exercise()).commit();
+        btn_athome_bulk = findViewById(R.id.btn_athome_bulk);
+
+        getSupportFragmentManager().beginTransaction().add(R.id.maincontainer1, new Bulk_exercise()).commit();
 
 
-        btn_exercise.setOnClickListener(new View.OnClickListener() {
+        btn_exercise_bulk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().add(R.id.maincontainer, new Shredded_exercise()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer1, new Bulk_exercise()).commit();
             }
         });
-        btn_diet.setOnClickListener(new View.OnClickListener() {
+        btn_diet_bulk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new Shredded_diet()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer1, new Bulk_diet()).commit();
             }
         });
-        btn_athome.setOnClickListener(new View.OnClickListener() {
+        btn_athome_bulk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, new Shredded_athome()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer1, new Bulk_athome()).commit();
             }
         });
-*/
+
     }
 }
